@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update or add item to cart
             if (cartProducts[productId]) {
                 cartProducts[productId].quantity++;
-                cartItems.querySelector(`[data-id="${productId}"]`).textContent = `Product-${productId} - $${productPrice} x ${cartProducts[productId].quantity}`;
+                cartItems.querySelector(`[data-id="${productId}"]`).textContent = `Product-${productId} - ${productPrice} x ${cartProducts[productId].quantity}`;
             } else {
                 cartProducts[productId] = { price: productPrice, quantity: 1 };
                 const cartItem = document.createElement('div');
-                cartItem.textContent = `Product-${productId} - $${productPrice} x ${cartProducts[productId].quantity}`;
+                cartItem.textContent = `Product-${productId} - ${productPrice} x ${cartProducts[productId].quantity}`;
                 cartItem.setAttribute('data-id', productId);
                 cartItems.appendChild(cartItem);
             }
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         delete cartProducts[productId];
                         cartItems.removeChild(cartItems.querySelector(`[data-id="${productId}"]`));
                     } else {
-                        cartItems.querySelector(`[data-id="${productId}"]`).textContent = `Product-${productId} - $${productPrice} x ${cartProducts[productId].quantity}`;
+                        cartItems.querySelector(`[data-id="${productId}"]`).textContent = `Product-${productId} - ${productPrice} x ${cartProducts[productId].quantity}`;
                     }
                 }
             }

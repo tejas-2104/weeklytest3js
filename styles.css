@@ -10,10 +10,11 @@
   }
   
   .product-section, .cart-section {
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 2px solid #ccc; /* Thick borders for sections */
+    border-radius: 10px;
     padding: 10px;
     margin-right: 20px; /* Add some space between sections */
+    background-color: #f9f9f9; /* Light gray background color */
   }
   
   .products, .cart {
@@ -21,10 +22,17 @@
     flex-direction: column;
   }
   
-  .product, .cart-item {
+  .product {
+    display: flex;
+    align-items: center; /* Center items vertically */
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd; /* Add border for every row */
-    padding-bottom: 10px; /* Add space between rows */
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff; /* White background color for rows */
+  }
+  
+  .product-info {
+    margin-right: 10px; /* Add space between product name and quantity controls */
   }
   
   .quantity-controls {
