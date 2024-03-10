@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .shopping-cart {
+    display: flex;
+  }
+  
+  .product-section, .cart-section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 20px; /* Add some space between sections */
+  }
+  
+  .products, .cart {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product, .cart-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Add border for every row */
+    padding-bottom: 10px; /* Add space between rows */
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity {
+    margin: 0 5px;
+    font-weight: bold; /* Make the quantity text bold */
+  }
+  
+  .increment-btn, .decrement-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 50%; /* Make buttons circular */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .increment-btn:hover, .decrement-btn:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  .cart-item {
+    padding: 5px 0;
+  }
+  
+  .total {
+    margin-top: 10px;
+    font-weight: bold; /* Make the total text bold */
+  }
+  
